@@ -97,11 +97,13 @@ svg{
 .nav{
     margin-bottom: 30px;
 }
+/******************************************************************************************************************************/
 
 .right{
     display:grid;
     grid-template-rows: 23% 77%;
 }
+/******************************************************************************************************************************/
 
 .top{
     display: grid;
@@ -155,11 +157,13 @@ img{
     height:40px;
     width: 40px;
 }
+/******************************************************************************************************************************/
 
 .profile>img{
     height:60px;
     width: 60px;
 }
+
 .create{
     display: flex;
     padding: 50px;
@@ -205,33 +209,60 @@ button{
     width: 100px;
     font-weight: 600;
 }
-
+/******************************************************************************************************************************/
 .bottom{
     display: grid;
     grid-template-columns: 75% 25%;
     background-color: aliceblue;
     grid-auto-flow: column;
-    padding: 25px;
+    padding: 20px;
+    padding-top: 15px;
 
 }
-
+/******************************************************************************************************************************/
 .projects{
     padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     justify-content: left;
 }
+
 .cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 30px;
+    padding-top: 20px;
     grid-template-rows: repeat(3, 1fr);
     height: 100%;
     width: 100%;
     gap: 20px;
 }
 
+.project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px; /* Negative margin to move the stripe outside the box */
+    height: 100%;
+    width: 9px; /* Adjust the width of the stripe as needed */
+    background-color:darkorange; /* Background color of the stripe */
+    border-radius: 10px 0px 0px 10px; /* Create an oblong shape */
+}
+
 .project{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Create an oblong shape */
+    background-color: white;
+    padding: 20px 20px;
+    position: relative;
 }
+
+.actions{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap:20px;
+}
+/******************************************************************************************************************************/
 
 .assorted{
     display: grid;
