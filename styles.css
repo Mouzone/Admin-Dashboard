@@ -231,8 +231,7 @@ button{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 20px;
-    grid-template-rows: repeat(3, 1fr);
-    height: 100%;
+    grid-template-rows: repeat(3, 20vh);
     width: 100%;
     gap: 20px;
 }
@@ -252,36 +251,76 @@ button{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px; /* Create an oblong shape */
     background-color: white;
-    padding: 20px 20px;
+    padding: 20px 30px;
+    padding-right: 0px;
     position: relative;
+    display: grid;
+    grid-template-columns: 85% 15%;
 }
 
 .actions{
-    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: right;
-    gap:20px;
+    gap:5px;
 }
 /******************************************************************************************************************************/
 
 .assorted{
     display: grid;
     grid-template-rows: repeat(2, auto);
-    background-color: blueviolet;
+    gap: 20px;
 }
 
 .announcements{
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
+    gap: 20px
 }
 
 .trending{
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
+    gap: 20px
+
 }
 
 .items{
     display: grid;
     grid-template-rows: repeat(3,auto);
     flex: 1;
+    background-color: white;
+}
+
+.announcement{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-bottom: solid lightgray;
+    font-weight: 100;
+
+}
+
+.trend{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+}
+.trend-icon>svg{
+    height:40px;
+    width: 40px;
+}
+.tag{
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+}
+.items :last-child{
+    border: none;
 }
